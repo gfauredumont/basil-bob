@@ -8,6 +8,7 @@ class Bob
     return 'Whoa, chill out!' if String.is_capitalised_word?(remark)
     return 'Whatever.' if remark == 'Tom-ay-to, tom-aaaah-to.'
     return 'Sure.' if remark == 'Does this cryogenic chamber make me look fat?'
+    return 'Sure.' if remark == 'You are, what, like 15?'
     'Something else.'
   end
 end
