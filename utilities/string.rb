@@ -1,7 +1,10 @@
 module Utilities
 	class String
 	   def self.is_capitalised_word?(line)
-	    /[^[A-Z&&[^\s]]]/.match(line).nil? ? true : false
+	    line.split('').each do |elt|
+	      return false unless ('A'..'Z').include? elt
+	    end
+	    true
 	  end
 	end
 end
