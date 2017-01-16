@@ -1,7 +1,7 @@
 module Utilities
 	class String
-	   def self.is_capitalised_word?(line)
-	    ! (/^[A-Z]+$/.match(line).nil?)
+	   def self.is_capitalised?(line)
+	    ! (/^[A-Z\s|[:punct:]]+$/.match(line).nil?)
 	  end
 
     def self.is_question?(line)
