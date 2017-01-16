@@ -5,7 +5,7 @@ module Utilities
 	  end
 
     def self.is_question?(line)
-      ! (/^[\w\s]+[?]{1,}$/.match(line).nil?)
+      ! (/^[\w\s|[:punct:]]+[?]{1,}$/.match(line).nil?)
     end
 	end
 end
