@@ -7,5 +7,9 @@ module Utilities
     def self.is_question?(line)
       ! (/^[\w\s|[:punct:]]+[?]{1,}$/.match(line).nil?)
     end
+
+    def self.is_exclamation?(line)
+      ! (/^[\w\s|[:punct:]]+[!]{1,}$/.match(line).nil?)
+    end
 	end
 end
