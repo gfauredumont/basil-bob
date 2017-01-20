@@ -48,25 +48,21 @@ class BobTest < Minitest::Test
   end
 
   def test_using_acronyms_in_regular_speech
-    skip
     remark = "It's OK if you don't want to go to the DMV."
     assert_equal 'Whatever.', bob.hey(remark), feedback(remark)
   end
 
   def test_forceful_questions
-    skip
     remark = 'WHAT THE HELL WERE YOU THINKING?'
     assert_equal 'Whoa, chill out!', bob.hey(remark), feedback(remark)
   end
 
   def test_shouting_numbers
-    skip
     remark = '1, 2, 3 GO!'
     assert_equal 'Whoa, chill out!', bob.hey(remark), feedback(remark)
   end
 
   def test_only_numbers
-    skip
     remark = '1, 2, 3'
     assert_equal 'Whatever.', bob.hey(remark), feedback(remark)
   end
